@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pmarash <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: chudapak <chudapak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/01 14:02:47 by pmarash           #+#    #+#             */
-/*   Updated: 2020/11/14 13:35:15 by pmarash          ###   ########.fr       */
+/*   Updated: 2020/12/02 20:09:51 by chudapak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,5 +93,6 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
 void				ft_putchar(char c);
 void				ft_putstr(char *s);
+void				ft_putnbr(int n);
 
 #endif

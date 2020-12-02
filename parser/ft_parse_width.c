@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_parse_width.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chudapak <chudapak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/28 16:24:43 by pmarash           #+#    #+#             */
-/*   Updated: 2020/12/02 19:43:50 by chudapak         ###   ########.fr       */
+/*   Created: 2020/12/02 18:19:13 by chudapak          #+#    #+#             */
+/*   Updated: 2020/12/02 21:17:00 by chudapak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#include "/Users/chudapak/code/42/printf/printf/headers/libftprintf.h"
 
-# include <stdarg.h>
-# include <stdlib.h>
-# include "/Users/chudapak/code/42/printf/printf/libft/libft.h"
-# include "/Users/chudapak/code/42/printf/printf/headers/ft_parser.h"
+int		ft_parse_width(char **str, int width)
+{
+	
+}
 
-#endif
