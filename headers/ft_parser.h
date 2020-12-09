@@ -6,7 +6,7 @@
 /*   By: chudapak <chudapak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 16:32:27 by chudapak          #+#    #+#             */
-/*   Updated: 2020/12/01 22:01:14 by chudapak         ###   ########.fr       */
+/*   Updated: 2020/12/07 19:38:03 by chudapak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ typedef struct	s_parse {
 
 t_flags	ft_parse_flags(char **str, t_flags flag);
 t_parse fill_struct(void);
+int		ft_parse_width(char **str, int width, va_list ap);
 
 #endif

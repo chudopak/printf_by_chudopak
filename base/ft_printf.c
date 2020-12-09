@@ -6,7 +6,7 @@
 /*   By: chudapak <chudapak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/30 21:19:39 by chudapak          #+#    #+#             */
-/*   Updated: 2020/12/02 19:44:11 by chudapak         ###   ########.fr       */
+/*   Updated: 2020/12/07 19:34:42 by chudapak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int     printed_arguments(char **str, va_list ap)
 	t_parse	parsed;
 	int		length;
 	
-	parsed = ft_parser(str);
+	parsed = ft_parser(str, ap);
 	
 }
 

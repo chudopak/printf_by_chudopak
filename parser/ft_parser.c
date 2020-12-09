@@ -6,7 +6,7 @@
 /*   By: chudapak <chudapak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/30 20:28:16 by chudapak          #+#    #+#             */
-/*   Updated: 2020/12/02 19:44:00 by chudapak         ###   ########.fr       */
+/*   Updated: 2020/12/07 19:34:56 by chudapak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ t_parse fill_struct(void)
 	return (tmp);
 }
 
-t_parse	ft_parser(char **str)
+t_parse	ft_parser(char **str, va_list ap)
 {
 	t_parse	parse;
 
@@ -34,7 +34,7 @@ t_parse	ft_parser(char **str)
 	
     ++*str;
 	parse.flag = ft_parse_flags(str, parse.flag);
-    parse.width = ft_parse_width(str, parse.width);
+    parse.width = ft_parse_width(str, parse.width, ap);
     
     //write code that parse width, precision, type (handle * in width and precision)
 }

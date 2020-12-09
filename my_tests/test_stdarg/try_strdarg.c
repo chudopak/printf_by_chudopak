@@ -49,6 +49,7 @@ void	test_va(char *str, ...)
 			str++;
 		}
 	}
+	va_end(ap);
 }
 
 int		main(int ac, char **av)

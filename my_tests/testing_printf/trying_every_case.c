@@ -6,7 +6,7 @@
 /*   By: chudapak <chudapak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 13:43:53 by pmarash           #+#    #+#             */
-/*   Updated: 2020/12/01 21:31:39 by chudapak         ###   ########.fr       */
+/*   Updated: 2020/12/07 19:39:50 by chudapak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,11 @@ int		main(void)
 	printf("%-10.5s %*i\n\n", "printf float", 5, nb);
 	printf("%-++++++++++++---10.5i - %X\n\n", b, b);
 
+	int		wild_cards_width = 15;
+	int		wild_cards_precision = 5;
+	float	fl_nb = 11.4525432523523;
+
+	printf("%0*.*f\n", wild_cards_width, wild_cards_precision, fl_nb);
 	/*char str[] = "print %d %d safa";
 	va_list ap;
 	va_start(ap, str);
