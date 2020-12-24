@@ -1,5 +1,4 @@
-#include "/Users/chudapak/code/42/printf/printf/headers/libftprintf.h"
-#include "/Users/chudapak/code/42/printf/printf/headers/ft_parser.h"
+#include "/Users/pmarash/42/printf/ft_printf/headers/libftprintf.h"
 #include <stdio.h>
 
 int		main(int ac, char **av)

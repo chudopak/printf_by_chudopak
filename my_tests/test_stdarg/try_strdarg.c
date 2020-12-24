@@ -1,13 +1,13 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "/Users/chudapak/code/42/printf/printf/libft/libft.h"
+#include "/Users/pmarash/42/printf/ft_printf/libft/libft.h"
 
-void	test_dif_fun(va_list ap)
+char	test_dif_fun(va_list ap)
 {
 	char	c;
 
 	c = va_arg(ap, int);
-	ft_putchar(c);
+	return (c);
 }
 
 void	test_va(char *str, ...)
@@ -15,7 +15,7 @@ void	test_va(char *str, ...)
 	va_list ap;
 	int 	i;
 	char 	*p;
-	//char	c;
+	char	c;
 
 	va_start(ap, str);
 	while (*str)
@@ -37,10 +37,10 @@ void	test_va(char *str, ...)
 			
 			else if (ft_strnstr(str, "%c", 2))
 			{
-				test_dif_fun(ap);
-				str += 2; 
+				c = test_dif_fun(ap);
+				str += 2;
 				//c = va_arg(ap, int);
-				//ft_putchar(c);
+				ft_putchar(c);
 			}
 		}
 		else
